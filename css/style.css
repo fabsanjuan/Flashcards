@@ -214,19 +214,20 @@ nav a:hover::after, nav a:focus::after, nav a:active::after {
 #grid-heading {
     grid-column: 1 / -1;
     text-align: center;
-    padding: 25px;
+    padding: 6rem 3rem;
     margin-top: 4rem;
     font-size: 3rem;
     font-weight: 900;
     font-style: oblique;
 }
 section h3 {
-    padding: 6rem 4rem;
+    padding: 18rem 4rem 2rem;
     margin: 1rem 0;
     background: #385170;
     color: #f1f1f1;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 section h3:hover {
