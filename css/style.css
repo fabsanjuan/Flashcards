@@ -221,8 +221,8 @@ nav a:hover::after, nav a:focus::after, nav a:active::after {
     font-weight: 900;
     font-style: oblique;
 }
-section h3 {
-    padding: 18rem 4rem 2rem;
+.topics-container {
+    padding: 4rem 2rem 4rem;
     margin: 1rem 0;
     background: #385170;
     color: #f1f1f1;
@@ -231,9 +231,14 @@ section h3 {
     text-align: center;
 }
 
-section h3:hover {
+.topics-container:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+}
+
+.topics-container img {
+    width: 13rem;
+    height: 12rem;
 }
 
 #how-it-works .container-main-sect {
