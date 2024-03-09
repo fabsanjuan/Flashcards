@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flashcards</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/flashStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <script src="../js/script.js" defer></script>
+    </head>
+    <body>
+        <header class="top-nav-sticky-wrapper">
+            <div class="top-nav-left playfair-display-logo">Flash Study</div>
+            <div class="top-nav-left">
+                <nav>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./index.html#topic-sel">Topics</a></li>
+                        <li><a href="./index.html#how-it-works">How to</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <!-- <button type="submit"><i class="fa fa-search"></i>Search</button> -->
+                    <input type="text" placeholder="Search.." name="search">
+                </form>
+            </div>
+    </header>
+    <main>
+        <section id="flashcard-main-wrapper">
+            <div id="card1" class="flashcard flipped">
+                <div class="card-content">
+                    <div class="front">
+                        <p>Term or Question at the Front.</p>
+                    </div>
+                    <div class="back">
+                        <p>Solution for the question at the Back.</p>
+                    </div>
+                </div>
+                <div class="controller">
+                    <!-- <div class="autoplay">
+                        <img src="../assets/play_button.png" alt="play-button">
+                    </div> -->
+                    <div class="next-back"></div>
+                    <div class="shuffle"></div>
+                </div>
+            </div>
+        </section>
+        <div id="footer-divider">
+        </div>
+        <footer id="flash-footer">
+            <h3>&copy; 2024 FlashStudy. All rights reserved.</h3>
+        </footer>
+        <!-- <div id="card2" class="flashcard">
+            <div class="card-content">
+                <div class="front">Term or Question at the Front.</div>
+                <div class="back">Solution for the question at the Back.</div>
+            </div>
+            <div class="controller">
+                <div class="autoplay"></div>
+                <div class="next-back"></div>
+                <div class="shuffle"></div>
+            </div>
+        </div>
+        <div id="card3" class="flashcard">
+            <div class="card-content">
+                <div class="front">Term or Question at the Front.</div>
+                <div class="back">Solution for the question at the Back.</div>
+            </div>
+            <div class="controller">
+                <div class="autoplay"></div>
+                <div class="next-back"></div>
+                <div class="shuffle"></div>
+            </div>
+        </div> -->
+    </main>
+    </body>
+</html>
+

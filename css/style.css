@@ -11,6 +11,7 @@
 .top-nav-sticky-wrapper {
     position: sticky;
     top: 0;
+    z-index: 1099;
     background-color: #fff;
     border-bottom: .0625rem solid #edeff4;
     display: flex;
@@ -61,7 +62,7 @@ nav a {
 nav a::after {
     content: '';
     position: absolute;
-    z-index: 1000;
+    z-index: 9000;
     width: 0;
     height: 4px;
     background: linear-gradient(to right, #bbcb74 10%, #a1cbff 99%);

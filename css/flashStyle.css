@@ -1,0 +1,69 @@
+/*---------------------Main Styles-------------------------*/
+#flashcard-main-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: rgb(149, 164, 255);
+    padding-bottom: 2rem;
+}
+
+.flashcard {
+    margin: 0 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 7rem;
+}
+
+.card-content {
+    position: relative;
+    perspective: 62.5rem;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    height: 25rem;
+    max-width: 50rem;
+}
+
+.card-content .front, .card-content .back {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    background: #f1f1f1;
+    backface-visibility: hidden;
+    cursor: pointer;
+    /* z-index: ; */
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 5rem 3rem 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.card-content .front p, .card-content .back p {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+.card-content .back {
+    transform: rotateY(-180deg);
+}
+
+.flipped .card-content {
+    transform: rotateY(180deg);
+}
+
+.controller {
+    background:  rgb(149, 164, 255);
+}
+
+.controller img {
+    width: 6rem;
+    height: 5rem;
+}
+/*---------------------Footer Styles-------------------------*/
+
+
