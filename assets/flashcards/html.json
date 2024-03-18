@@ -1,106 +1,132 @@
 [
     {
         "question": "What is HTML?",
+        "answerType": "text",
         "answer": "It stands for Hyper Text Markup Language and it is the standard for describing the structure of web pages. It consists of a series of elements that tell the browser how to display the content."
     },
     {
         "question": "What declaration defines an HTML document?",
+        "answerType": "text",
         "answer": "<!DOCTYPE html>"
     },
     {
         "question": "Which element is the root element in a web page?",
+        "answerType": "text",
         "answer": "The <html></html> element."
     },
     {
         "question": "Which element contains meta information about the page?",
+        "answerType": "text",
         "answer": "The <head></head> element."
     },
     {
         "question": "Which element is shown in the browser's title bar?",
+        "answerType": "text",
         "answer": "The <title></title> element."
     },
     {
         "question": "Which element is a container that contains all the visible content of a webpage?",
+        "answerType": "text",
         "answer": "The <body></body> element."
     },
     {
         "question": "Which element defines headings?",
+        "answerType": "text",
         "answer": "The <h1></h1>...<h6></h6> elements."
     },
     {
         "question": "Which element defines a body of text?",
+        "answerType": "text",
         "answer": "The <p></p> element."
     },
     {
         "question": "How can you display a link on a web page?",
+        "answerType": "text",
         "answer": "Use the <a></a> element."
     },
     {
         "question": "How do you specify the destination of a link?",
+        "answerType": "text",
         "answer": "Using the <href='../pathtofile.file'> attribute."
     },
     {
         "question": "How do you display an image on a webpage?",
+        "answerType": "text",
         "answer": "An image is defined using the <img /> element."
     },
     {
         "question": "What attributes must an <img /> have?",
+        "answerType": "text",
         "answer": "The source file and alternative text attributes that define the specify the file location and description respectively. <img src='../pathtofile.file' alt='describes-pic'>"
     },
     {
         "question": "What is an HTML element?",
+        "answerType": "text",
         "answer": "Everything that is included between the tag start and end."
     },
     {
         "question": "What is an empty HTML element?",
+        "answerType": "text",
         "answer": "An element that has no content."
     },
     {
         "question": "Is HTML case-sensitive?",
+        "answerType": "text",
         "answer": "No but always use lowercase anyways."
     },
     {
         "question": "What is an HTML attribute?",
+        "answerType": "text",
         "answer": "It provides more information about an element and comes in the format: <name='value'>."
     },
     {
         "question": "What does the style attribute do?",
+        "answerType": "text",
         "answer": "Provides an inline styling to an element, don't use it. Use CSS for styling purposes instead. "
     },
     {
         "question": "What is the language attribute?",
+        "answerType": "text",
         "answer": "It is used to declare the langauge of the web page: lang='en'."
     },
     {
         "question": "How do we define a thematic break in a web page?",
+        "answerType": "text",
         "answer": "Using the <hr> tag."
     },
     {
         "question": "How can we create a line break in a web page?",
+        "answerType": "text",
         "answer": "The <br> element will create a new line without starting a new paragraph."
     },
     {
         "question": "How can we specify the format of text on a web page?",
+        "answerType": "text",
         "answer": "The <pre> element defines preformatted text and preserves spaces and line breaks."
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
 ]

@@ -1,86 +1,107 @@
 [
     {
         "question": "What is CSS?",
+        "answerType": "text",
         "answer": "It stands for Cascading Style Sheets and it controls the layout of how content is displayed and styled on a web page."
     },
     {
         "question": "What are the properties of a CSS rule?",
+        "answerType": "text",
         "answer": "It consists of a selector and a declaration block, in curly braces, that styles the page."
     },
     {
         "question": "What is the basic CSS syntax?",
+        "answerType": "text",
         "answer": "{insert code block}, the selecetor points to the HTML element you want to style, the declaration block contains property: 'value' pairs separated by semicolons."
     },
     {
         "question": "What are the five categories of CSS selectors?",
+        "answerType": "text",
         "answer": "Simple selectors, combinator selectors, pseudo-class selectors, pseudo-elements selectors, attribute selectors"
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
     {
         "question": "",
+        "answerType": "text",
         "answer": ""
     },
 ]

@@ -1,39 +1,68 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const flashcards = document.querySelectorAll('.flashcard');
+    const flashcardContainer = document.querySelector('.flashcard')
+    const questionContainer = document.querySelector('.front p');
+    const answerContainer = document.querySelector('.back p');
     let currentCard = 0;
 
-    function showCurrentCard() {
-        flashcards.forEach((card, index) => {
-            if (index === currentCard) {
-                card.classList.add('active');
-            } else {
-                card.classList.remove('active');
-            }
-        });
+    // Fetch flashcard content from storage.
+    function fetchFlashcards() {
+        return fetch('../assets/flashcards/science.json')
+        .then(response => response.json())
+        .catch(error => console.error('Fetching flashcards failed:', error));
     }
-    showCurrentCard();
 
-    // Event listener for buttons
+    // Display the current card.
+    function showCurrentCard(flashcard) {
+        flashcardContainer.classList.remove('flipped');
+
+        // Delay addition of new content until after card flips.
+        setTimeout(() => {
+            questionContainer.textContent = flashcard.question;
+            answerContainer.textContent = '';
+
+            if (flashcard.answerType === 'text') {
+                answerContainer.textContent = flashcard.answer;
+            } else if (flashcard.answerType === 'image') {
+                const img = document.createElement('img');
+                img.src = flashcard.answer;
+                img.alt = 'Flashcard image answer';
+                answerContainer.appendChild(img);
+            }
+        }, 90);
+    }
+    fetchFlashcards().then(flashcards => {
+        showCurrentCard(flashcards[currentCard]);
+    })
+    
+    // Event listener for next and previous buttons.
     document.getElementById('next').addEventListener('click', () => {
-        if (currentCard < flashcards.length) {
-            currentCard++;
-            console.log(currentCard);
-            showCurrentCard();
-        }
+        fetchFlashcards().then(flashcards => {
+            if (currentCard < flashcards.length) {
+                currentCard++;
+                console.log(currentCard);
+                showCurrentCard(flashcards[currentCard]);
+            } else {
+                currentCard = 0;
+                showCurrentCard(flashcards[currentCard]);
+            }
+        })
     })
     document.getElementById('prev').addEventListener('click', () => {
-        if (currentCard > 0) {
-            currentCard--;
-            console.log(currentCard);
-            showCurrentCard();
-        }
+        fetchFlashcards().then(flashcards => {
+            if (currentCard > 0) {
+                currentCard--;
+                console.log(currentCard);
+                showCurrentCard(flashcards[currentCard]);
+            } else {
+                currentCard = flashcards.length - 1;
+                showCurrentCard(flashcards[currentCard]);
+            }
+        })
     })
 
     // Flip functionality.
-    flashcards.forEach(card => {
-        card.addEventListener('click', () => {
-            card.classList.toggle('flipped');
-        })
+    flashcardContainer.addEventListener('click', () => {
+        flashcardContainer.classList.toggle('flipped');
     })
 })
 
@@ -48,4 +77,3 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
 */
-

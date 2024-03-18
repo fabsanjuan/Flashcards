@@ -21,13 +21,13 @@
 .card-content {
     position: relative;
     perspective: 62.5rem;
-    transition: transform 0.6s;
+    transition: transform 0.5s;
     transform-style: preserve-3d;
     height: 25rem;
     min-width: 45rem;
 }
 
-.card-content .back::after {
+.card-content .front::after {
     content: 'Click the card to flip';
     text-align: center;
     padding-top: 0.875rem;
@@ -38,6 +38,7 @@
     background: linear-gradient(to right, #bbcb74 10%, #a1cbff 99%);
     bottom: 0;
     left: 0;
+    border-radius: 0 0 20px 20px;
 }
 
 .card-content .front, .card-content .back {
@@ -104,6 +105,7 @@
     border-radius: 50px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 /*---------------------Footer Styles-------------------------*/
 
