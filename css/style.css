@@ -254,9 +254,9 @@ nav a:hover::after, nav a:focus::after, nav a:active::after {
     max-width: 95%;
 }
 footer {
-    padding: 2.5em;
+    padding: 2rem;
     background: #fff;
-    font-size: 1.2em;
+    font-size: 1.2rsem;
     text-align: center;
 }
 

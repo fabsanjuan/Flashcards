@@ -1,0 +1,30 @@
+[
+    {
+        "question": "How can we study using Spaced Practice?",
+        "answer": "Plan early and set a little bit of time every day. 5 hours spread out over 2 weeks is better than 5 hours all at once. Review older information to keep it fresh."
+    },
+    {
+        "question": "What is retrieval practice?",
+        "answer": "Recalling information directly from memory without any further context. Exactly like flashcards!"
+    },
+    {
+        "question": "How can we use Elaboration to study?",
+        "answer": "While learning be sure to keep questioning why and how and then search for the answers. If possible, make connections with things you already know - the more personal the better."
+    },
+    {
+        "question": "What is meant by the term interleaving?",
+        "answer": "It means switching between ideas during study sessions. Don't study a single topic for too long if it feels like learning is harder this way, you are doing it right."
+    },
+    {
+        "question": "How do we learn using concrete examples?",
+        "answer": "Link the ideas you are learning to real world examples as often as possible. Use material from the text or search it up online - ask an AI!"
+    },
+    {
+        "question": "What is meant by the term dual coding?",
+        "answer": "Make sure you encode what you learn through text with visuals and what you learn through visuals with text. There is no preferred learning style but rather try to use all of them to learn effectively."
+    },
+    {
+        "question": "What are the 6 most effective learning strategies?",
+        "answer": "The 6 best strategies are: spaced practice, retrieval practice, elaboration, interleaving, concrete examples, dual coding."
+    }
+]

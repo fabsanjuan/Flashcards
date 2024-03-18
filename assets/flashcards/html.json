@@ -1,0 +1,106 @@
+[
+    {
+        "question": "What is HTML?",
+        "answer": "It stands for Hyper Text Markup Language and it is the standard for describing the structure of web pages. It consists of a series of elements that tell the browser how to display the content."
+    },
+    {
+        "question": "What declaration defines an HTML document?",
+        "answer": "<!DOCTYPE html>"
+    },
+    {
+        "question": "Which element is the root element in a web page?",
+        "answer": "The <html></html> element."
+    },
+    {
+        "question": "Which element contains meta information about the page?",
+        "answer": "The <head></head> element."
+    },
+    {
+        "question": "Which element is shown in the browser's title bar?",
+        "answer": "The <title></title> element."
+    },
+    {
+        "question": "Which element is a container that contains all the visible content of a webpage?",
+        "answer": "The <body></body> element."
+    },
+    {
+        "question": "Which element defines headings?",
+        "answer": "The <h1></h1>...<h6></h6> elements."
+    },
+    {
+        "question": "Which element defines a body of text?",
+        "answer": "The <p></p> element."
+    },
+    {
+        "question": "How can you display a link on a web page?",
+        "answer": "Use the <a></a> element."
+    },
+    {
+        "question": "How do you specify the destination of a link?",
+        "answer": "Using the <href='../pathtofile.file'> attribute."
+    },
+    {
+        "question": "How do you display an image on a webpage?",
+        "answer": "An image is defined using the <img /> element."
+    },
+    {
+        "question": "What attributes must an <img /> have?",
+        "answer": "The source file and alternative text attributes that define the specify the file location and description respectively. <img src='../pathtofile.file' alt='describes-pic'>"
+    },
+    {
+        "question": "What is an HTML element?",
+        "answer": "Everything that is included between the tag start and end."
+    },
+    {
+        "question": "What is an empty HTML element?",
+        "answer": "An element that has no content."
+    },
+    {
+        "question": "Is HTML case-sensitive?",
+        "answer": "No but always use lowercase anyways."
+    },
+    {
+        "question": "What is an HTML attribute?",
+        "answer": "It provides more information about an element and comes in the format: <name='value'>."
+    },
+    {
+        "question": "What does the style attribute do?",
+        "answer": "Provides an inline styling to an element, don't use it. Use CSS for styling purposes instead. "
+    },
+    {
+        "question": "What is the language attribute?",
+        "answer": "It is used to declare the langauge of the web page: lang='en'."
+    },
+    {
+        "question": "How do we define a thematic break in a web page?",
+        "answer": "Using the <hr> tag."
+    },
+    {
+        "question": "How can we create a line break in a web page?",
+        "answer": "The <br> element will create a new line without starting a new paragraph."
+    },
+    {
+        "question": "How can we specify the format of text on a web page?",
+        "answer": "The <pre> element defines preformatted text and preserves spaces and line breaks."
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+    {
+        "question": "",
+        "answer": ""
+    },
+]
