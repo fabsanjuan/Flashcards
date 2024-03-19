@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Mobile hamburger menu.
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navUL = document.querySelector('.top-nav-left nav ul');
+
+    hamburger.addEventListener('click', () => {
+        navUL.classList.toggle('active');
+        hamburger.style.di
+    })
+
+    // Flashcard variables.
     const flashcardContainer = document.querySelector('.flashcard')
     const questionContainer = document.querySelector('.front p');
     const answerContainer = document.querySelector('.back p');

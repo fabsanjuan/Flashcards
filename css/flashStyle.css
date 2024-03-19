@@ -1,111 +1,222 @@
+/*---------------------Mobile Device Styles-------------------------*/
+@media (max-width: 600px) {
+    #flashcard-main-wrapper {
+        width: 100%;
+        height: 100vh;
+        background: radial-gradient(827px at 47.3% 48%, rgb(183, 183, 183) 0%, rgb(149, 164, 255) 100%);
+        padding-bottom: 2rem;
+    }
+    
+    .flashcard.active {
+        margin: 0 5%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 2.5rem;
+    }
+
+    .card-content {
+        position: relative;
+        perspective: 62.5rem;
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+        height: 33rem;
+        min-width: 13.5rem;
+    }
+
+    .card-content .front::after {
+        content: 'Click the card to flip';
+        text-align: center;
+        padding-top: 0.875rem;
+        position: absolute;
+        z-index: 9000;
+        width: 100%;
+        height: 1.875rem;
+        background: linear-gradient(to right, #bbcb74 10%, #a1cbff 99%);
+        bottom: 0;
+        left: 0;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .card-content .front, .card-content .back {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        background: #f1f1f1;
+        backface-visibility: hidden;
+        cursor: pointer;
+        /* z-index: ; */
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding: 0 3rem 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+    }
+
+    .card-content .front p, .card-content .back p {
+        grid-row: 2;
+        grid-column: 1 / -1;
+        font-size: 1.275rem;
+        padding-right: 2.5rem;
+        line-height: 1.75;
+        text-align: justify;
+    }
+
+    .card-content .back {
+        transform: rotateY(-180deg);
+    }
+
+    .flipped .card-content {
+        transform: rotateY(180deg);
+    }
+
+    .card-content .bulb-icon {
+        margin-left: -2.5rem;
+        padding: 0.5rem;
+        max-width: 4.5rem;
+        max-height: 4.5rem;
+    }
+
+    .card-content .speaker-icon {
+        grid-column: 3;
+        margin: 0.5rem;
+        padding: 0.75rem;
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+
+    .controller {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: -10rem 0;
+    }
+
+    .controller button {
+        background: #f1f1f1;
+        margin: 0 1rem;
+        padding: 1rem 2.5rem;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+}
 /*---------------------Main Styles-------------------------*/
-#flashcard-main-wrapper {
-    width: 100%;
-    height: 100vh;
-    background: radial-gradient(827px at 47.3% 48%, rgb(183, 183, 183) 0%, rgb(149, 164, 255) 100%);
-    padding-bottom: 2rem;
-}
-
-.flashcard {
-    display: none;
-}
-
-.flashcard.active {
-    margin: 0 25%;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-top: 7rem;
-}
-
-.card-content {
-    position: relative;
-    perspective: 62.5rem;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-    height: 25rem;
-    min-width: 45rem;
-}
-
-.card-content .front::after {
-    content: 'Click the card to flip';
-    text-align: center;
-    padding-top: 0.875rem;
-    position: absolute;
-    z-index: 9000;
-    width: 100%;
-    height: 1.875rem;
-    background: linear-gradient(to right, #bbcb74 10%, #a1cbff 99%);
-    bottom: 0;
-    left: 0;
-    border-radius: 0 0 20px 20px;
-}
-
-.card-content .front, .card-content .back {
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-    background: #f1f1f1;
-    backface-visibility: hidden;
-    cursor: pointer;
-    /* z-index: ; */
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    padding: 0 3rem 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-}
-
-.card-content .front p, .card-content .back p {
-    grid-row: 2;
-    grid-column: 1 / -1;
-    font-size: 1.275rem;
-    padding-right: 2.5rem;
-    line-height: 1.75;
-    text-align: justify;
-}
-
-.card-content .back {
-    transform: rotateY(-180deg);
-}
-
-.flipped .card-content {
-    transform: rotateY(180deg);
-}
-
-.card-content .bulb-icon {
-    margin-left: -2.5rem;
-    padding: 0.5rem;
-    max-width: 4.5rem;
-    max-height: 4.5rem;
-}
-
-.card-content .speaker-icon {
-    grid-column: 3;
-    margin: 0.5rem 0 0 35rem;
-    padding: 0.75rem;
-    max-width: 4rem;
-    max-height: 4rem;
-}
-
-.controller {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: -10rem 0;
-}
-
-.controller button {
-    background: #f1f1f1;
-    margin: 0 2rem;
-    padding: 1rem 5rem;
-    border-radius: 50px;
-    border: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+@media (min-width: 601px){
+    #flashcard-main-wrapper {
+        width: 100%;
+        height: 100vh;
+        background: radial-gradient(827px at 47.3% 48%, rgb(183, 183, 183) 0%, rgb(149, 164, 255) 100%);
+        padding-bottom: 2rem;
+    }
+    
+    .flashcard {
+        display: none;
+    }
+    
+    .flashcard.active {
+        margin: 0 25%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 7rem;
+    }
+    
+    .card-content {
+        position: relative;
+        perspective: 62.5rem;
+        transition: transform 0.5s;
+        transform-style: preserve-3d;
+        height: 25rem;
+        min-width: 45rem;
+    }
+    
+    .card-content .front::after {
+        content: 'Click the card to flip';
+        text-align: center;
+        padding-top: 0.875rem;
+        position: absolute;
+        z-index: 9000;
+        width: 100%;
+        height: 1.875rem;
+        background: linear-gradient(to right, #bbcb74 10%, #a1cbff 99%);
+        bottom: 0;
+        left: 0;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .card-content .front, .card-content .back {
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        background: #f1f1f1;
+        backface-visibility: hidden;
+        cursor: pointer;
+        /* z-index: ; */
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        padding: 0 3rem 1rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+    }
+    
+    .card-content .front p, .card-content .back p {
+        grid-row: 2;
+        grid-column: 1 / -1;
+        font-size: 1.275rem;
+        padding-right: 2.5rem;
+        line-height: 1.75;
+        text-align: justify;
+    }
+    
+    .card-content .back {
+        transform: rotateY(-180deg);
+    }
+    
+    .flipped .card-content {
+        transform: rotateY(180deg);
+    }
+    
+    .card-content .bulb-icon {
+        margin-left: -2.5rem;
+        padding: 0.5rem;
+        max-width: 4.5rem;
+        max-height: 4.5rem;
+    }
+    
+    .card-content .speaker-icon {
+        grid-column: 3;
+        margin: 0.5rem 0 0 35rem;
+        padding: 0.75rem;
+        max-width: 4rem;
+        max-height: 4rem;
+    }
+    
+    .controller {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: -10rem 0;
+    }
+    
+    .controller button {
+        background: #f1f1f1;
+        margin: 0 2rem;
+        padding: 1rem 5rem;
+        border-radius: 50px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+    
 }
 /*---------------------Footer Styles-------------------------*/
 
