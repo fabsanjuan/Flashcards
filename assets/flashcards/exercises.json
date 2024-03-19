@@ -1,0 +1,57 @@
+[
+    {
+        "question": "(Js)Write a 'winner' function that goes through 2 stacks of cards and compares them. The higher value card wins the round, ties are 0 points each. Go through the deck and declare the winner.",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/simpleCardGameJs.png"
+    },
+    {
+        "question": "(Py)Write a 'winner' function that goes through 2 stacks of cards and compares them. The higher value card wins the round, ties are 0 points each. Go through the deck and declare the winner.",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/simpleCardGamePy.png"
+    },
+    {
+        "question": "(Js)Convert words in a string delimited by dashes and underscores into camelcase.",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/convert2CamelCaseJs.png"
+    },
+    {
+        "question": "(Py)Convert words in a string delimited by dashes and underscores into camelcase.",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/convert2CamelCasePy.png"
+    },
+    {
+        "question": "(Js)Write an algorithm that takes an array and moves all the zeros to the end, preserving the order of the other elements.",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/moveZerosEndJs.png"
+    },
+    {
+        "question": "(Py)Write an algorithm that takes an array and moves all the zeros to the end, preserving the order of the other elements.",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/moveZerosEndPy.png"
+    },
+    {
+        "question": "(Js)Multiply each arg by 5 raised to the power of the length of arg digits.",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/multiplyNum5Js.png"
+    },
+    {
+        "question": "(Py)Multiply each arg by 5 raised to the power of the length of arg digits.",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/multiplyNum5Py.png"
+    },
+    {
+        "question": "",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/"
+    },
+    {
+        "question": "",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/"
+    },
+    {
+        "question": "",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/"
+    }
+]

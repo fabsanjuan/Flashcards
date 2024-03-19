@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch flashcard content from storage.
     function fetchFlashcards() {
-        return fetch('../assets/flashcards/science.json')
+        return fetch('../assets/flashcards/learningStrategies.json')
         .then(response => response.json())
         .catch(error => console.error('Fetching flashcards failed:', error));
     }
@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (flashcard.answerType === 'image') {
                 const img = document.createElement('img');
                 img.src = flashcard.answer;
+                console.log(img.src);
                 img.alt = 'Flashcard image answer';
                 answerContainer.appendChild(img);
             }

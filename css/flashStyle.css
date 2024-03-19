@@ -88,16 +88,21 @@
         max-height: 4rem;
     }
 
+    .card-content p img {
+        width: 17rem;
+        height: 24rem;
+    }
+
     .controller {
         display: flex;
         width: 100%;
         justify-content: center;
-        margin: -10rem 0;
+        margin: -8rem 0;
     }
 
     .controller button {
         background: #f1f1f1;
-        margin: 0 1rem;
+        margin: 2rem 1rem;
         padding: 1rem 2.5rem;
         border-radius: 50px;
         border: none;
@@ -106,7 +111,7 @@
     }
 
 }
-/*---------------------Main Styles-------------------------*/
+/*--------------------------------------------------------Main Styles-------------------------------------------------------------------------*/
 @media (min-width: 601px){
     #flashcard-main-wrapper {
         width: 100%;
@@ -120,11 +125,11 @@
     }
     
     .flashcard.active {
+        padding: 7% 0 10%;
         margin: 0 25%;
         display: flex;
         flex-direction: column;
         height: 100%;
-        padding-top: 7rem;
     }
     
     .card-content {
@@ -194,17 +199,25 @@
     
     .card-content .speaker-icon {
         grid-column: 3;
-        margin: 0.5rem 0 0 35rem;
+        margin: 0.5rem 0 0 34rem;
         padding: 0.75rem;
         max-width: 4rem;
         max-height: 4rem;
+    }
+
+    .card-content p img {
+        width: 35rem;
+        height: 24rem;
+        padding-left: 5rem;
+        margin-top: -5rem;
     }
     
     .controller {
         display: flex;
         width: 100%;
         justify-content: center;
-        margin: -10rem 0;
+        margin: -7rem 0;
+        padding-bottom: 3rem;
     }
     
     .controller button {
