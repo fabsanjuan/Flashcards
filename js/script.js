@@ -1,11 +1,23 @@
+// Initialize cache object for topic selection.
+const flashcardsCache = {};
+
 document.addEventListener('DOMContentLoaded', () => {
+    // Current topic.
+    let currentTopic = '';
+    // URL parameter.
+    const urlParams = new URLSearchParams(window.location.search);
+    const topic = urlParams.get('topic');
+    if (topic) {
+        fetchFlashcards(topic)
+        currentTopic = topic;
+    }
+
     // Mobile hamburger menu.
     const hamburger = document.querySelector('.hamburger-menu');
     const navUL = document.querySelector('.top-nav-left nav ul');
 
     hamburger.addEventListener('click', () => {
         navUL.classList.toggle('active');
-        hamburger.style.di
     })
 
     // Flashcard variables.
@@ -15,9 +27,22 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentCard = 0;
 
     // Fetch flashcard content from storage.
-    function fetchFlashcards() {
-        return fetch('../assets/flashcards/learningStrategies.json')
+    function fetchFlashcards(topic) {
+        if (flashcardsCache[topic]) {
+            console.log(`Loading ${topic} from cache`);
+            showCurrentCard(flashcardsCache[topic][currentCard]);
+            currentTopic = topic;
+            return;
+        }
+        const filePath = `../assets/flashcards/${topic}.json`;
+        fetch(filePath)
         .then(response => response.json())
+        .then(flashcards => {
+            console.log(`Fetched ${topic} flashcards`);
+            flashcardsCache[topic] = flashcards;
+            currentTopic = topic;
+            showCurrentCard(flashcards[currentCard]);
+        })
         .catch(error => console.error('Fetching flashcards failed:', error));
     }
 
@@ -41,41 +66,54 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }, 90);
     }
-    fetchFlashcards().then(flashcards => {
-        showCurrentCard(flashcards[currentCard]);
-    })
     
     // Event listener for next and previous buttons.
     document.getElementById('next').addEventListener('click', () => {
-        fetchFlashcards().then(flashcards => {
-            if (currentCard < flashcards.length) {
+            if (currentCard < flashcardsCache[currentTopic].length) {
                 currentCard++;
                 console.log(currentCard);
-                showCurrentCard(flashcards[currentCard]);
+                showCurrentCard(flashcardsCache[currentTopic][currentCard]);
             } else {
                 currentCard = 0;
-                showCurrentCard(flashcards[currentCard]);
+                showCurrentCard(flashcardsCache[currentTopic][currentCard]);
             }
-        })
     })
     document.getElementById('prev').addEventListener('click', () => {
-        fetchFlashcards().then(flashcards => {
             if (currentCard > 0) {
                 currentCard--;
                 console.log(currentCard);
-                showCurrentCard(flashcards[currentCard]);
+                showCurrentCard(flashcardsCache[currentTopic][currentCard]);
             } else {
-                currentCard = flashcards.length - 1;
-                showCurrentCard(flashcards[currentCard]);
+                currentCard = flashcardsCache[currentTopic].length - 1;
+                showCurrentCard(flashcardsCache[currentTopic][currentCard]);
             }
-        })
     })
 
     // Flip functionality.
     flashcardContainer.addEventListener('click', () => {
         flashcardContainer.classList.toggle('flipped');
     })
+
+    // Topic selector buttons.
+    const topicButtons = document.querySelectorAll('.topic-btn');
+
+    topicButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            let target = e.target;
+            while (target != null && !target.classList.contains('topic-btn')) { // Pretty cool trick.
+                target = target.parentElement;
+            }
+            if (target != null) {
+                const topic = target.getAttribute('data-topic');
+                console.log(topic);
+                fetchFlashcards(topic);
+            }
+
+        })
+    })
 })
+
+
 
 /*
 

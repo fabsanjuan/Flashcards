@@ -7,6 +7,10 @@
     font-style: normal;
     box-sizing: border-box;
  }
+
+ a {
+    text-decoration: none;
+ }
  /*---------------------Mobile Device Styles-------------------------*/
 @media (max-width: 600px) {
     /*-------------------------Header Styles--------------------------*/
@@ -431,8 +435,7 @@
     #grid-heading {
         grid-column: 1 / -1;
         text-align: center;
-        padding: 6rem 3rem;
-        margin-top: 4rem;
+        padding: 5rem 3rem;
         font-size: 3rem;
         font-weight: 900;
         font-style: oblique;
@@ -457,10 +460,16 @@
         height: 12rem;
     }
 
+    .topics-container h3 {
+        color: #fff;
+    }
+
+
+/* 
     #how-it-works .container-main-sect {
         margin: 10rem;
         padding: 5rem;
-    }
+    } */
 
     /*---------------------Footer Styles-------------------------*/
     #footer-divider {

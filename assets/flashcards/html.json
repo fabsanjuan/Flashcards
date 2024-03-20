@@ -103,30 +103,6 @@
         "question": "How can we specify the format of text on a web page?",
         "answerType": "text",
         "answer": "The <pre> element defines preformatted text and preserves spaces and line breaks."
-    },
-    {
-        "question": "",
-        "answerType": "text",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answerType": "text",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answerType": "text",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answerType": "text",
-        "answer": ""
-    },
-    {
-        "question": "",
-        "answerType": "text",
-        "answer": ""
-    },
+    }
 ]
+

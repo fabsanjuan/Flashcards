@@ -62,7 +62,6 @@
         font-size: 1.275rem;
         padding-right: 2.5rem;
         line-height: 1.75;
-        text-align: justify;
     }
 
     .card-content .back {
@@ -97,7 +96,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        margin: -8rem 0;
+        margin-top: -10rem;
     }
 
     .controller button {
@@ -179,7 +178,6 @@
         font-size: 1.275rem;
         padding-right: 2.5rem;
         line-height: 1.75;
-        text-align: justify;
     }
     
     .card-content .back {
@@ -216,7 +214,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        margin: -7rem 0;
+        margin-top: -7rem;
         padding-bottom: 3rem;
     }
     
@@ -227,6 +225,14 @@
         border-radius: 50px;
         border: none;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+
+    .topics-container button {
+        background: none;
+        border: none;
+        outline: none;
+        box-shadow: none;
         cursor: pointer;
     }
     
