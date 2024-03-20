@@ -2,56 +2,81 @@
     {
         "question": "(Js)Write a 'winner' function that goes through 2 stacks of cards and compares them. The higher value card wins the round, ties are 0 points each. Go through the deck and declare the winner.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/simpleCardGameJs.png"
+        "answer": "../assets/pics&Icons/simpleCardGameJs.png"
     },
     {
         "question": "(Py)Write a 'winner' function that goes through 2 stacks of cards and compares them. The higher value card wins the round, ties are 0 points each. Go through the deck and declare the winner.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/simpleCardGamePy.png"
+        "answer": "../assets/pics&Icons/simpleCardGamePy.png"
     },
     {
         "question": "(Js)Convert words in a string delimited by dashes and underscores into camelcase.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/convert2CamelCaseJs.png"
+        "answer": "../assets/pics&Icons/convert2CamelCaseJs.png"
     },
     {
         "question": "(Py)Convert words in a string delimited by dashes and underscores into camelcase.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/convert2CamelCasePy.png"
+        "answer": "../assets/pics&Icons/convert2CamelCasePy.png"
     },
     {
         "question": "(Js)Write an algorithm that takes an array and moves all the zeros to the end, preserving the order of the other elements.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/moveZerosEndJs.png"
+        "answer": "../assets/pics&Icons/moveZerosEndJs.png"
     },
     {
         "question": "(Py)Write an algorithm that takes an array and moves all the zeros to the end, preserving the order of the other elements.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/moveZerosEndPy.png"
+        "answer": "../assets/pics&Icons/moveZerosEndPy.png"
     },
     {
         "question": "(Js)Multiply each arg by 5 raised to the power of the length of arg digits.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/multiplyNum5Js.png"
+        "answer": "../assets/pics&Icons/multiplyNum5Js.png"
     },
     {
         "question": "(Py)Multiply each arg by 5 raised to the power of the length of arg digits.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/multiplyNum5Py.png"
+        "answer": "../assets/pics&Icons/multiplyNum5Py.png"
     },
     {
-        "question": "",
+        "question": "(Js)Given a string replace every letter with its position in the alphabet. Don't return non-letters.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/"
+        "answer": "../assets/pics&Icons/replaceAlphaPositionJs.png"
     },
     {
-        "question": "",
+        "question": "(Py)Given a string replace every letter with its position in the alphabet. Don't return non-letters",
         "answerType": "image",
-        "answer": "../assets/pics&icons/"
+        "answer": "../assets/pics&Icons/replaceAlphaPositionPy.png"
     },
     {
-        "question": "",
+        "question": "(Js)Create a function that takes a sequence as an arg and returns a list of items without any elements with the same values next to each other and preserving the original order of elements.",
         "answerType": "image",
-        "answer": "../assets/pics&icons/"
+        "answer": "../assets/pics&Icons/uniqueInOrderJs.png"
+    },
+    {
+        "question": "(Py)Create a function that takes a sequence as an arg and returns a list of items without any elements with the same values next to each other and preserving the original order of elements.",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/uniqueInOrderPy.png"
+    },
+    {
+        "question": "(Js)Write a function that takes in a string of words and spaces only and returns the same string with all words > 5 letters reversed (WordrennipS)",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/wordSpinnerJs.png"
+    },
+    {
+        "question": "(Py)Write a function that takes in a string of words and spaces only and returns the same string with all words > 5 letters reversed (WordrennipS)",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/wordSpinnerPy.png"
+    },
+    {
+        "question": "(Js)Find the sum of all the multiples of 3 or 5 below N.",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/sumOfMultiplesJs.png"
+    },
+    {
+        "question": "(Py)Find the sum of all the multiples of 3 or 5 below N.",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/sumOfMultiplesPy.png"
     }
 ]

@@ -44,6 +44,7 @@
         margin-top: 0.15rem;
     }
 
+    /* hamburger menu styling for mobile devices */
     .hamburger-menu {
         display: flex;
         flex-direction: column;
@@ -59,6 +60,31 @@
         width: 2.3rem;
         background: #333;
         margin: 0.2rem 0;
+        transition: transform 0.5s ease-in-out;
+        border-radius: 20px;
+    }
+
+    #hamburger-line1.active {
+        transform: rotate(45deg);
+        position: absolute;
+        margin-top: 1.55rem;
+        margin-left: 0.5rem;
+        top: 0;
+        left: 0;
+        transition: transform 0.5s ease-in-out;
+    }
+    #hamburger-line2.active {
+        height: 0;
+        transition: transform 0.7s ease-in-out;
+    }
+    #hamburger-line3.active {
+        transform: rotate(-45deg);
+        position: absolute;
+        margin-top: 1.55rem;
+        margin-left: 0.5rem;
+        top: 0;
+        left: 0;
+        transition: transform 0.5s ease-in-out;
     }
 
     nav ul {
@@ -67,14 +93,14 @@
     }
 
     nav ul.active {
-        display: flex;
-        padding: .97rem 3rem 1rem;
-        margin: 4rem 0 .9rem;
+        width: 100vw;
+        margin: 4.1rem 0 .9rem;
         list-style-type: none;
         display: flex;
         justify-content: center;
         align-items: center;
         background: black;
+        transition: transform 0.5s ease-in-out;
     }
 
     nav a {

@@ -14,10 +14,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Mobile hamburger menu.
     const hamburger = document.querySelector('.hamburger-menu');
+    const line1 = document.getElementById('hamburger-line1');
+    const line2 = document.getElementById('hamburger-line2');
+    const line3 = document.getElementById('hamburger-line3');
     const navUL = document.querySelector('.top-nav-left nav ul');
+    const navLinks = document.querySelectorAll('.nav-links');
 
     hamburger.addEventListener('click', () => {
         navUL.classList.toggle('active');
+        line1.classList.toggle('active');
+        line2.classList.toggle('active');
+        line3.classList.toggle('active');
+    })
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (navUL.classList.contains('active')) {
+                navUL.classList.toggle('active');
+                line1.classList.toggle('active');
+                line2.classList.toggle('active');
+                line3.classList.toggle('active');
+            }
+        })
     })
 
     // Flashcard variables.
