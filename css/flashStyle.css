@@ -44,6 +44,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1rem;
         background: #f1f1f1;
+        -webkit-backface-visibility: hidden; /* For Safari */
         backface-visibility: hidden;
         cursor: pointer;
         /* z-index: ; */
@@ -65,10 +66,12 @@
     }
 
     .card-content .back {
+        -webkit-transform: rotateY(-180deg); /* For Safari */
         transform: rotateY(-180deg);
     }
 
     .flipped .card-content {
+        -webkit-transform: rotateY(180deg);  /* For Safari */
         transform: rotateY(180deg);
     }
 
