@@ -78,5 +78,45 @@
         "question": "(Py)Find the sum of all the multiples of 3 or 5 below N.",
         "answerType": "image",
         "answer": "../assets/pics&Icons/sumOfMultiplesPy.png"
+    },
+    {
+        "question": "(Js)Find the sum of the even-valued terms in the Fibonacci sequence whose values do not exceed N.",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/evenFibSumJs.png"
+    },
+    {
+        "question": "(Py)Find the sum of the even-valued terms in the Fibonacci sequence whose values do not exceed N.",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/evenFibSumPy.png"
+    },
+    {
+        "question": "(Js)What is the largest prime factor of a given number N?",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/largestPrimeFactorJs.png"
+    },
+    {
+        "question": "(Py)What is the largest prime factor of a given number N?",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/largestPrimeFactorPy.png"
+    },
+    {
+        "question": "(Js) Find the largest palindrome made from the product of two 3-digit numbers which is less than N.",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/largestPalindromeProductJs.png"
+    },
+    {
+        "question": "(Py) Find the largest palindrome made from the product of two 3-digit numbers which is less than N.",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/largestPalindromeProductPy.png"
+    },
+    {
+        "question": "(Js)What is the smallest positive number that is evenly divisible by all of the numbers from 1 to N?",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/smallestMultipleJs.png"
+    },
+    {
+        "question": "(Py)What is the smallest positive number that is evenly divisible by all of the numbers from 1 to N?",
+        "answerType": "image",
+        "answer": "../assets/pics&Icons/smallestMultiplePy.png"
     }
 ]
