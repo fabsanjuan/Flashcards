@@ -118,5 +118,15 @@
         "question": "(Py)What is the smallest positive number that is evenly divisible by all of the numbers from 1 to N?",
         "answerType": "image",
         "answer": "../assets/pics&Icons/smallestMultiplePy.png"
+    },
+    {
+        "question": "(js)What is the implementation of heap sort?",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/heapSort.png"
+    },
+    {
+        "question": "(js)What is the implementation of bubble sort?",
+        "answerType": "image",
+        "answer": "../assets/pics&icons/bubbleSort.png"
     }
 ]
